@@ -3,7 +3,7 @@ clf;
 v = 0:1e-4:30.0;
 K = 1.38e-23;
 q = 1.6e-19;
-A = 1.00:0.25:2.00;
+A = 1.00;
 NS = 36;
 G = 1000; 
 TC= 25; 
@@ -26,7 +26,8 @@ plot(v,i);
 xlabel('Voltage');
 ylabel('Current density');
 title('Plot')
+//a=gca();
+//a.box="on"
+//a.data_bounds=[0,0;30,60];
 set(gca(),"auto_clear","off")//hold on
-a=gca();
-a.box="on"
-a.data_bounds=[0,0;30,60];
+

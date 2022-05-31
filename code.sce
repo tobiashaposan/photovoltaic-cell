@@ -9,6 +9,14 @@ G = 1000;
 TC= 25; 
 ucc = 3e-3;
 
+//range
+for A = 1:0.25:2
+    a=gca();
+    a.box="on"
+    a.data_bounds=[0,0;30,60];
+end
+
+
 //calculation
 TK = 273.15 + TC;
 Irs=1.23/(exp(q*21.6/(NS*K*A*TK))-1);
